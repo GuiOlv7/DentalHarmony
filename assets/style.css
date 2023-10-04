@@ -87,7 +87,7 @@ nav h1 {
 #section1 {
     height: 100vh;
     background: #212121;
-    background-image: url(/dentalHarmony/assets/img/mainImage.png);
+    background-image: url(./img/mainImage.png);
     background-size: cover;
     background-position-x: center;
     display: flex;
@@ -354,7 +354,7 @@ footer p {
     }
 
     #section3 {
-        background-image: url(/dentalHarmony/assets/img/collage.jpg);
+        background-image: url(./img/collage.jpg);
         background-size: cover;
         background-position-x: center;
     }
@@ -441,7 +441,7 @@ footer p {
     }
 
     #section3 {
-        background-image: url(/dentalHarmony/assets/img/image-collage100.jpg);
+        background-image: url(./img/collage.jpg);
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
