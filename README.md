@@ -2,7 +2,7 @@
 
 <h2>Sobre o Projeto</h2>
 
-<a href="https://dentalharmony.netlify.app/">https://allshopping.netlify.app/</a><hr>
+<a href="https://dentalharmony.netlify.app/">https://dentalharmony.netlify.app/</a><hr>
 
 Website para clínica odontológica.
 
