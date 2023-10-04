@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 300ms;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 11vh;
+    background: #212121;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+}
+
+nav h1 {
+    font-weight: 100;
+    margin-left: 3px;
+}
+
+.navigation, .navigation ul, .navigation a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.navigation ul li a {
+    margin: 0 1rem;
+    padding: .5rem 0;
+    border-bottom: 1.5px solid #fff;
+    opacity: .9;
+    transition: 300ms;
+}
+
+.navigation ul li a:hover {
+    border-radius: 50%;
+    margin: 0;
+    padding: .5rem 1rem;
+    opacity: 1;
+    transition: 400ms;
+}
+
+.section {
+    width: 100%;
+    height: 110vh;
+}
+
+.online-consultation-btn {
+    position: fixed;
+    display: flex;
+    left: 5%;
+    bottom: 5%;
+    padding: 7.5px 20px;
+    border: none;
+    border-radius: 25px;
+    align-items: center;
+    background: #00a80ebc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 1000;
+}
+
+.online-consultation-btn:hover {
+    background: #00a80e;
+}
+
+#section1 {
+    height: 100vh;
+    background: #212121;
+    background-image: url(/dentalHarmony/assets/img/mainImage.png);
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.slogan {
+    margin-bottom: 15%;
+}
+
+.slogan h2 {
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.slogan h3 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .5rem;
+}
+
+#section2 {
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #212121;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6%;
+    width: 90%;
+}
+
+.about h2 {
+    margin: 0 0 8% 37%;
+    font-weight: 600;
+}
+
+.about h3 {
+    margin-left: 14%;
+    letter-spacing: .1rem;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#section2-img {
+    width: 60%;
+}
+
+#section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #212121; */
+    background: #13b5ea;
+}
+
+.section3-main {
+    margin-right: 2%;
+    margin-left: 2%;
+    width: fit-content;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+  
+.slide {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+  
+.slide img {
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+.image-text {
+    float: right;
+    width: 50%;
+    margin-left: 6%;
+    color: #fff;
+}
+
+.image-text h2 {
+    margin-bottom: 10%;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.image-text h3 {
+    font-size: 20px;
+    font-weight: 200;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: static;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.prev {
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: #fff;
+    color: #13b5ea;
+}
+  
+#section4 {
+    height: fit-content;
+    padding: 4%;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    padding: 0 7%;
+    color: #fff;
+    border-right: 1px solid #444;
+}
+
+.location p {
+    font-size: smaller;
+}
+
+.location-title {
+    display: flex;
+    align-items: center;
+    color: #13b5ea;
+    margin: auto auto 1rem -1rem;
+}
+
+.location-title img {
+    width: 30px;
+}
+
+.local {
+    margin-bottom: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.social {
+    margin: 0 7%;
+}
+
+.social-content {
+    width: auto;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.social-content img {
+    margin: 0 .25rem;
+    width: 27px;
+}
+
+.social-link {
+    display: flex;
+}
+
+.social-content a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    display: grid;
+    letter-spacing: 1px;
+}
+
+.social-content a > h4 {
+    color: #13b5ea;
+}
+
+.social-content a:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link:hover {
+    scale: 1.02;
+}
+
+footer {
+    display: flex;
+    background: #212121;
+    color: #999;
+    align-items: center;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 2rem auto;
+    font-size: 14px;
+}
+
+@media (max-width: 640px) {
+    .navigation {
+        display: none;
+    }
+
+    .slogan h2 {
+        font-size: 35px;
+    }
+
+    .slogan h3 {
+        font-size: 15px;
+    }
+
+    .online-consultation-btn {
+        padding: 6px 9px;
+        font-size: x-small;
+    }
+
+    #section2 {
+        justify-content: center;
+    }
+
+    #section2 img {
+        display: none;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about h2 {
+        font-size: 40px;
+        margin: 0 0 8% 0;
+    }
+
+    .about h3 {
+        font-size: smaller;
+        margin: 0;
+        text-align: center;
+    }
+
+    #section3 {
+        background-image: url(/dentalHarmony/assets/img/collage.jpg);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .slide img{
+        display: none;
+    }
+
+    .image-text {
+        margin: 0;
+        width: auto;
+    }
+
+    .image-text h2 {
+        font-size: 25px;
+    }
+
+    .image-text h3 {
+        font-size: medium;
+    }
+
+    .prev, .next {
+        padding: 12px;
+        font-size: 16px;        
+        background-color: #ffffffcf;
+        color: #13b5ea;
+    }
+
+    #section4 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 8%;
+    }
+
+    .location {
+        font-size: small;
+        border: none;
+    }
+
+    .social {
+        font-size: small;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .navigation {
+        font-size: small;
+    }
+
+    .slogan h2 {
+        font-size: 50px;
+    }
+
+    .slogan h3 {
+        font-size: 18px;
+    }
+
+    .online-consultation-btn {
+        padding: 7px 15px;
+        font-size: small;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .about h2 {
+        font-size: 45px;
+        margin: 0 0 8% 0;
+    }
+
+    .about h3 {
+        font-size: 15px;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    #section3 {
+        background-image: url(/dentalHarmony/assets/img/image-collage100.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    .slide img{
+        display: none;
+    }
+
+    .image-text {
+        margin: 0;
+        width: auto;
+    }
+
+    .image-text h2 {
+        font-size: 35px;
+        margin-bottom: 5%;
+    }
+
+    .image-text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .prev, .next {
+        padding: 14px;
+        font-size: 18px;        
+        background-color: #ffffffcf;
+        color: #13b5ea;
+    }
+
+    .location {
+        font-size: 14px;
+    }
+
+    .social {
+        margin: auto;
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+}
